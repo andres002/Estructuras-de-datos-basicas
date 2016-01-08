@@ -8,7 +8,7 @@ Universidad Politécnica de Chiapas
 */
 
 
-
+/*
 class ListaDoble<T> {
     // Referencia  a el node raiz o la cabeza de la lista.
     private Node<T> head,rear;
@@ -218,7 +218,7 @@ class ListaDoble<T> {
             //}
             
         }*/
-        return output;
+      /*  return output;
     }
     
-}
+}*/
