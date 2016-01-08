@@ -45,8 +45,11 @@ public class EstructurasBasicas {
             break;
                 
             case 5:
-                System.exit(0);
+                
             break;
+            case 6:
+                System.exit(0);
+                break;
                 
             default:
                 
