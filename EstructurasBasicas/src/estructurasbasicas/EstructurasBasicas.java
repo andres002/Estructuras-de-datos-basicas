@@ -5,6 +5,7 @@
  */
 package estructurasbasicas;
 
+import ArbolBD.PrincipalABD;
 import java.util.Scanner;
 
 /**
@@ -45,7 +46,8 @@ public class EstructurasBasicas {
             break;
                 
             case 5:
-                
+                PrincipalABD p = new PrincipalABD();
+                p.menu();
             break;
             case 6:
                 System.exit(0);
