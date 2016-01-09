@@ -65,8 +65,8 @@ class ListaSimple {
      public boolean searchRemove(String data1)
     // remueve el elemento en la posición indicada
     {
-        
-        int cont  = 0;
+        boolean encontrado = false;
+        int cont  = 1;
         Node Current = head;
         // Se tiene que posicionar en la cabeza para poder recorrer la lista y llegar al fin
         while(Current.getNext()!=null &&
@@ -74,8 +74,12 @@ class ListaSimple {
              Current = Current.getNext();
             cont++;
         }
-
+        if(Current.getNext() == null && !(data1.equals(((Contact) Current.getData()).name))){
+            return false;
+        }
+        
         return remove(cont);
+        
     }
      
  
@@ -124,13 +128,13 @@ public boolean addOrdenado(Contact data)
         
         Node Current = head;
         int a=1;
-        String data1 = data.name;
+        String data1 = data.name.toUpperCase();
         while(Current.getNext()!=null &&
-               (data1.compareTo(((Contact) Current.getNext().getData()).name)) > 0) {
+               (data1.compareTo(((Contact) Current.getNext().getData()).name.toUpperCase())) > 0) {
              Current = Current.getNext();
             a++;
         }
-        return addPos(a,data1);
+        return addPos(a,data);
     }
 
 

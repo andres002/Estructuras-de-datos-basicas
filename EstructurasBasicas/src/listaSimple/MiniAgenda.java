@@ -65,32 +65,34 @@ public class MiniAgenda {
             case 5:
             System.out.println("Por favor Ingrese el nombre del Contacto a Eliminar");
                if(ls.searchRemove(k.getString())){
-                   System.out.println("Elimanci´n realizada con exito");
+                   System.out.println("Elimanción realizada con exito");
                }else{
                    System.out.println("Eliminación no realizada");
                }
             break;
             case 6:
-                Node n = new Node(ls.head);
+                Node n = ls.head;
                 System.out.println("\n\n\n");
                 while(n.getNext() != null){
                     n = n.getNext();
+                    System.out.println("----------------------------------------");
                     Contact x = (Contact)n.getData();
                     System.out.println("Nombre: " + x.name);
                     System.out.println("Telefono: " + x.number);  
-                    System.out.println("----------------------------------------");
+                    
                 }
-                System.out.println("Total de contactos = " + ls.size());
+                System.out.println("\n\nTotal de contactos = " + ls.size()+"\n");
             break;
             case 7:
                 bandera = false;
+                break;
             default:
                 System.out.println("Opcion Invalida Intentelo de nuevo");
-                menu();
             break;
         }
         if(bandera)
             menu();
+        
     }
     public void start(){
        System.out.println("Bienvenido a la Mini Agenda");
