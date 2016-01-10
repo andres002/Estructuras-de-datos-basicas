@@ -7,6 +7,7 @@ package estructurasbasicas;
 
 import ArbolBD.PrincipalABD;
 import listaSimple.MiniAgenda;
+import listaDoble.Agendita;
 import java.util.Scanner;
 
 /**
@@ -46,6 +47,8 @@ public class EstructurasBasicas {
             break;
                 
             case 4:
+                Agendita agendita = new Agendita();
+                agendita.start();
             break;
                 
             case 5:
