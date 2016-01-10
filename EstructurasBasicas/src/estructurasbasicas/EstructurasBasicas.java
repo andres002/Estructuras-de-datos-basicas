@@ -9,7 +9,7 @@ import ArbolBD.PrincipalABD;
 import listaSimple.MiniAgenda;
 import listaDoble.Agendita;
 import java.util.Scanner;
-
+import Pila.LeePila;
 /**
  *
  * @author Andres
@@ -30,6 +30,12 @@ public class EstructurasBasicas {
         
         switch(opc){
             case 1:
+                boolean bandera = true;
+                LeePila a = new LeePila();
+                while(bandera){
+                    bandera = a.leer();
+                }
+                a.imprimir();
             break;
                 
             case 2:
