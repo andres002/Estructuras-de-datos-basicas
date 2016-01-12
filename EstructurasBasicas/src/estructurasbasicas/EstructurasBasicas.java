@@ -26,7 +26,7 @@ public class EstructurasBasicas {
         System.out.println("-------------------------");
         System.out.print("\nSeleccione una opción: ");
         int opc = Integer.parseInt(sc.nextLine().replaceAll(" ", ""));
-        System.out.println("\nIngrese la palabra FIN al finalizar");
+        
         
         switch(opc){
             case 1:
@@ -41,6 +41,7 @@ public class EstructurasBasicas {
             case 2:
                 boolean b=false;
 		MainQueue mc= new MainQueue();
+                System.out.println("\nIngrese la palabra FIN al finalizar");
 		do{
 			b=mc.leer();
 		}while(b==false);
