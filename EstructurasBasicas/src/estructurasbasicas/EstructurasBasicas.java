@@ -15,15 +15,12 @@ import Pila.LeePila;
  * @author Andres
  */
 public class EstructurasBasicas {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) throws Exception {
+    
+    public void menucito() throws Exception {
         Scanner sc = new Scanner(System.in);
-        System.out.println("--------BIENVENIDO-------");
+        System.out.println("\n\n\n------------BIENVENIDO------------");
         System.out.println("1. Pilas\n2. Colas\n3. Lista Simple\n4. Lista Doble\n5. Árbol\n6. Salir");
-        System.out.println("-------------------------");
+        System.out.println("------------------------------------");
         System.out.print("\nSeleccione una opción: ");
         int opc = Integer.parseInt(sc.nextLine().replaceAll(" ", ""));
         
@@ -70,6 +67,15 @@ public class EstructurasBasicas {
                 
             break;
         }
+        menucito();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) throws Exception {
+        EstructurasBasicas es = new EstructurasBasicas();
+        es.menucito();
     }
     
 }

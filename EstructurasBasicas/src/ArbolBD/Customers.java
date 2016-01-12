@@ -138,7 +138,7 @@ public class Customers implements Serializable{
         System.out.println("City: "+ city);
         System.out.println("Region: "+ region);
         System.out.println("PostalCode: "+ postalCode);*/
-        System.out.println("Country: "+country);
+        System.out.println("Country: "+country+"\n");
         /*System.out.println("Phone: "+phone);
         System.out.println("fax: "+fax);*/
     }   

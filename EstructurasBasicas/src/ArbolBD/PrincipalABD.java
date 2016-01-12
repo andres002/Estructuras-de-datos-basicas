@@ -15,14 +15,14 @@ public class PrincipalABD{
   	}
 
     public void menu(){
-        
-        System.out.println("Introduzca una opcion");
-        System.out.println("1.Leer registros");
+        System.out.println("------------------------------------");
+        System.out.print("\nIntroduzca una opcion: ");
+        System.out.println("\n1. Leer registros");
         System.out.println("2. Imprimir lista");
         System.out.println("3. Limpiar arbol");
         System.out.println("4. Guardar el arbol");
-        System.out.println("5.Recuperar el arbol");
-
+        System.out.println("5. Recuperar el arbol");
+         System.out.println("------------------------------------");
         int opc = leerNumero();
         switch(opc){
             case 1: leerRegistros();
@@ -50,7 +50,7 @@ public class PrincipalABD{
 
     public void imprimir(){
         System.out.println("Seleccione una opción de impresión");
-        System.out.println("1. Inorder \n 2.Postorder \n 3. Preorder");
+        System.out.println("1. Inorder \n 2. Postorder \n 3. Preorder");
         int opc = leerNumero();
     	try{
             switch(opc){
