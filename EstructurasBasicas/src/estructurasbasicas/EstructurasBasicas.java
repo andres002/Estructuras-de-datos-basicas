@@ -19,7 +19,7 @@ public class EstructurasBasicas {
     public void menucito() throws Exception {
         Scanner sc = new Scanner(System.in);
         System.out.println("\n\n\n------------BIENVENIDO------------");
-        System.out.println("1. Pilas\n2. Colas\n3. Lista Simple\n4. Lista Doble\n5. Árbol\n6. Salir");
+        System.out.println("1. Pilas\n2. Colas\n3. Lista Simple\n4. Lista Doble\n5. Árbol\n6. Creditos\n7. Salir\n ");
         System.out.println("------------------------------------");
         System.out.print("\nSeleccione una opción: ");
         int opc = Integer.parseInt(sc.nextLine().replaceAll(" ", ""));
@@ -59,7 +59,17 @@ public class EstructurasBasicas {
                 PrincipalABD p = new PrincipalABD();
                 p.menu();
             break;
-            case 6:
+             case 6:
+                  System.out.println("Universidad Politecnica de Chiapas");
+                System.out.println("Andres Aguilar Cruz");
+                System.out.println("Josseline Juliane Arreola Cruz");
+                System.out.println("Javier de Jesus Flores Herrera");
+                System.out.println("Hugo Sarmiento Toledo");
+                        
+                break;
+               
+                
+            case 7:
                 System.exit(0);
                 break;
                 
